@@ -1,0 +1,197 @@
+\documentclass[3pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage[
+top    = 2.50cm,
+bottom = 2.50cm,
+left   = 2.00cm,
+right  = 2.50cm]{geometry}
+
+\leftmargin=0.9in
+\oddsidemargin=-0.1in
+\textwidth=6.5in
+\topmargin=-0.8in
+\textheight=10.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+\pagestyle{empty}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		{\Large \scshape{#1}}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Yuan(Rachel) Qiu}{515 S, Aiken Avenue, Apt.912, PA 15232 }{yuq4@pitt.edu   (412)951-0672}
+
+
+
+\header{Objectives}
+
+\begin{body}
+	\vspace{18pt}
+	\textbf{An intern as a web designer/software engineer where over 5 years experience will add great value}\\
+\end{body}
+
+\medskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{18pt}
+	\textbf{University of Pittsburgh}{}, Pittsburgh, PA\hfill \emph{September 2014 - Expected May 2016}{} \\
+	\emph{Master Candidate of Information Science} \hfill \emph{GPA:3.75/4.00}\\
+	\emph{Courses: Web Technologies and Standards, Database Management, Advanced Database Management, \\ \hspace{40pt}Information Visualization,  Information Retrieval and Storage, E-business}\\
+  \medskip
+	\textbf{University of Tasmania},  Sydney, Australia\hfill \emph{August 2010 - July 2014} \\
+	\emph{Bachelor of Engineer in Information System} \hfill \emph{GAP:3.52/4.00}\\
+	\emph{Collaborative program with Shanghai Ocean University}
+\end{body}
+
+\medskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Project Experience}
+
+\begin{body}
+	\vspace{18pt}
+%	\textbf{Information Security Institute, JHU}  \\
+%	\vspace*{-8pt}
+
+    \textbf{A Neighborhood First-aid Website}  \hfill \emph{October 2014 - November 2014}\\
+    Developed a social network website for users to send emergency help requests to neighborhoods
+    \begin{itemize} \itemsep -0pt
+    \item {Built an Apache Derby database with javaDB to }
+    \item {Designed and implemented web interfaces with html, css and javascript}
+    \end{itemize}
+
+    \textbf{Contagious Disease Exploration}  \hfill \emph{October 2014 - November 2014}\\
+    Designed and built a visualization system for observing the distribution and variation of contagious disease
+    \begin{itemize} \itemsep -0pt
+    \item {Used Javascript library D3 to manipulate documents}
+    \item {Transformed large volume of source data from excel to csv and imported into D3}
+    \item {Visualized data in the form of parallel coordinates, map and some basic dynamic graphs}
+    \end{itemize}
+
+    \textbf{A DVD Rental System}  \hfill \emph{October 2014 - November 2014}\\
+    The system enabled customers to search for DVDs and salespersons to obtain sales statistical information
+    \begin{itemize} \itemsep -0pt
+    \item {Developed a dynamic website based on a web application framework Codelgniter (CI) and PHP}
+    \item {Implemented corresponding MVCs for every functionality}
+    \item {Utilized Twitter bootstraps, various open source CSS and Javascript libraries}
+    \end{itemize}
+
+\end{body}
+
+
+\medskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Research Experience}
+\begin{body}
+    \vspace{18pt}
+    \textbf{A System for Managing Campus Resources}  \hfill \emph{December 2011 - December 2013}\\
+    The system is to help manage campus resources efficiently through online ordering and checking
+    \begin{itemize} \itemsep -0pt
+    \item {Implemented four modules of the system including login authentication and management, library management, teaching building and student activity center}
+    \item {Applied double linked list to manage user information when connection from local authentication to database was lost}
+    \end{itemize}
+
+    \textbf{A Crosstalk Cancellation System Based on Two Loudspeakers Configuration}  \hfill \emph{February 2013 - April 2013}\\
+    
+    \begin{itemize} \itemsep -0pt
+    \item {Implemented the algorithm in Matlab Simulink and summarized resulting images for further analysis}
+    \item {Designed audio metric experiments of three-dimensional sound effects}
+    \end{itemize}	
+
+\end{body}
+
+% \newpage{} % uncomment this line if you want to force a new page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+%\header{Activities}
+
+%\begin{body}
+%	\vspace{14pt}
+%	\textbf{USTC Student Union} \hfill {} \emph{August 2009 - July 2013}\\
+%    \vspace{7pt}
+%    \textbf{Virginia Tech, Language and Culture Institute}\\ {The Summer Program for Scientific Communication} {}\hfill\emph{July 2011- August 2011}\\
+%	\vspace{7
+%	\textbf{Volunteer at South Africa Mother's Orphanage} \hfill {} \emph{July 2009 - August 2009}\\
+%\end{body}
+
+%\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{18pt}
+    \emph{\textbf{Platform:}}{} Linux, Windows, iOS and Android\\
+	\emph{\textbf{Languages:}}{} expert (html, CSS, javascript), proficient (java, SQL, PHP), prior experience (C) \\
+\end{body}
+
+\smallskip
+
+\end{document}
